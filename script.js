@@ -356,7 +356,7 @@ let c= document.querySelector("body");
 c.prepend(b);
 console.log(b);
 
-question 2
+// question 2
 
 let pa = document.querySelector(".para");
 let d = pa.getAttribute("class");
@@ -365,7 +365,9 @@ console.log(d);
 pa.classList.add("newClass"); //will add newClass with class
 pa.classList.remove("para"); //will remove specified class
 
-Event
+
+
+// Event
 let b= document.querySelector("#btn1");
 b.onclick =(()=>{ ;
     
@@ -405,3 +407,22 @@ b.addEventListener("mouseover",()=>{
     }
     console.log(mode);
 });
+
+
+
+document.querySelector("h1").innerHTML= document.querySelector("h1").innerHTML+" Arafat";
+
+document.querySelector("button").addEventListener("click", function(){
+
+    document.querySelector("div").innerHTML= "Number is 2 by clicked"
+});
+
+
+
+let p = document.createElement('button');
+p.innerText = 'click me JS';
+p.style.backgroundColor="red";
+
+let v= document.querySelector("button");
+
+v.after(p);
