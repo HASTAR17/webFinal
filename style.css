@@ -1,0 +1,565 @@
+/* Basic Syntax */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Color and Background Color */
+.foreground-pink {
+    color: pink;
+}
+
+.background-blue {
+    background-color: blue;
+}
+
+.background-green {
+    background-color: green;
+}
+
+/* Color Systems */
+.color-rgb {
+    color: rgb(255, 0, 0);
+}
+
+.color-hex {
+    color: #00ff00;
+}
+
+/* Selectors */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+}
+
+#id-selector {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.class-selector {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Text Properties */
+.text-center {
+    text-align: center;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-family-arial {
+    font-family: Arial, sans-serif;
+}
+
+.line-height-normal {
+    line-height: normal;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Units in CSS */
+.unit-example {
+    width: 50%;
+    margin-left: 10px;
+    padding: 5em;
+}
+
+/* Box Model */
+.box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    padding: 10px 15px 20px 25px; /* top right bottom left */
+    margin: 10px 15px 20px 25px;
+}
+
+.rounded {
+    border-radius: 10px;
+    
+   
+    
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Default value */
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+    justify-content: center; /*main axis*/
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    align-items: center; /*cross axis*/
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    align-items: stretch;
+
+    align-content: center; /* cross axis allignment of space between & around the content */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: stretch;
+
+    gap: 10px; /* Gap between flex items */
+
+    align-self: center; /* aligns a single flex item */
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+    align-self: baseline;
+    align-self: stretch;
+
+    flex-grow: 1; /* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items */
+    flex-shrink: 1; /* The flex-shrink property specifies how much the item will shrink relative to the rest of the flexible items */
+}
+
+display{
+    display: block;        /* The element is displayed as a block element */
+    display: inline;       /* The element is displayed as an inline element */
+    display: inline-block; /* The element is displayed as an inline-level block container */
+    display: flex;         /* The element is displayed as a block-level flex container */
+    display: grid;         /* The element is displayed as a block-level grid container */
+    display: none;         /* The element is not displayed */
+    display: table;        /* The element is displayed as a block-level table */
+    display: table-cell;   /* The element is displayed as a table cell */
+    display: table-row;    /* The element is displayed as a table row */
+    display: inline-block; /* The element is displayed as an inline-level block container */
+
+    background-image: url('image.jpg'); /* Sets the background image */
+    background-size: cover; /* Scales the background image to cover the element */
+
+}
+
+/* Media */
+@media (min-width: 200px) and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+
+
+css{
+
+   
+/* Display Properties */
+.display-block {
+    display: block; /* The element is displayed as a block element */
+}
+
+.display-inline {
+    display: inline; /* The element is displayed as an inline element */
+}
+
+.display-inline-block {
+    display: inline-block; /* The element is displayed as an inline-level block container */
+}
+
+.display-flex {
+    display: flex; /* The element is displayed as a block-level flex container */
+}
+
+.display-grid {
+    display: grid; /* The element is displayed as a block-level grid container */
+}
+
+.display-none {
+    display: none; /* The element is not displayed */
+}
+
+.display-table {
+    display: table; /* The element is displayed as a block-level table */
+}
+
+.display-table-cell {
+    display: table-cell; /* The element is displayed as a table cell */
+}
+
+.display-table-row {
+    display: table-row; /* The element is displayed as a table row */
+}
+
+/* Position Properties */
+.position-static {
+    position: static; /* Default value. Elements are positioned according to the normal flow of the document */
+}
+
+.position-relative {
+    position: relative; /* Elements are positioned relative to their normal position */
+    top: 1px;
+    right: 2px;
+    bottom: 3px;
+    left: 4px;
+    z-index: 1; /* The z-index property specifies the stack order of an element */
+}
+
+
+.position-absolute {
+    position: absolute; /* Elements are positioned relative to the nearest positioned ancestor */
+}
+
+.position-fixed {
+    position: fixed; /* Elements are positioned relative to the browser window */
+}
+
+.position-sticky {
+    position: sticky; /* Elements are positioned based on the user's scroll position */
+}
+
+/* Overflow Properties */
+.overflow-visible {
+    overflow: visible; /* Default value. Overflow is not clipped */
+}
+
+.overflow-hidden {
+    overflow: hidden; /* Overflow is clipped, and the rest of the content will be invisible */
+}
+
+.overflow-scroll {
+    overflow: scroll; /* Overflow is clipped, but a scrollbar is added to see the rest of the content */
+}
+
+.overflow-auto {
+    overflow: auto; /* Similar to scroll, but it adds scrollbars only when necessary */
+}
+
+/* Float Properties */
+.float-left {
+    float: left; /* The element floats to the left of its container */
+}
+
+.float-right {
+    float: right; /* The element floats to the right of its container */
+}
+
+.float-none {
+    float: none; /* The element does not float */
+}
+
+/* Clear Properties */
+.clear-left {
+    clear: left; /* No floating elements allowed on the left side */
+}
+
+.clear-right {
+    clear: right; /* No floating elements allowed on the right side */
+}
+
+.clear-both {
+    clear: both; /* No floating elements allowed on either the left or the right side */
+}
+
+.clear-none {
+    clear: none; /* Allows floating elements on both sides */
+}
+
+/* Visibility Properties */
+.visibility-visible {
+    visibility: visible; /* The element is visible */
+}
+
+.visibility-hidden {
+    visibility: hidden; /* The element is hidden, but still takes up space */
+}
+
+/* Opacity Properties */
+.opacity-100 {
+    opacity: 1; /* Fully opaque */
+}
+
+.opacity-50 {
+    opacity: 0.5; /* 50% opacity */
+}
+
+.opacity-0 {
+    opacity: 0; /* Fully transparent */
+}
+}
+/* Margin Properties */
+.margin-10px {
+    margin: 10px; /* Sets all four margins to 10px */
+}
+
+.margin-top-10px {
+    margin-top: 10px; /* Sets the top margin to 10px */
+}
+
+.margin-right-10px {
+    margin-right: 10px; /* Sets the right margin to 10px */
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px; /* Sets the bottom margin to 10px */
+}
+
+.margin-left-10px {
+    margin-left: 10px; /* Sets the left margin to 10px */
+}
+
+/* Padding Properties */
+.padding-10px {
+    padding: 10px; /* Sets all four paddings to 10px */
+}
+
+.padding-top-10px {
+    padding-top: 10px; /* Sets the top padding to 10px */
+}
+
+.padding-right-10px {
+    padding-right: 10px; /* Sets the right padding to 10px */
+}
+
+.padding-bottom-10px {
+    padding-bottom: 10px; /* Sets the bottom padding to 10px */
+}
+
+.padding-left-10px {
+    padding-left: 10px; /* Sets the left padding to 10px */
+}
+
+/* Border Properties */
+.border-1px-solid-black {
+    border: 1px solid black; /* Sets a 1px solid black border */
+}
+
+.border-top-1px-solid-black {
+    border-top: 1px solid black; /* Sets a 1px solid black border on the top */
+}
+
+.border-right-1px-solid-black {
+    border-right: 1px solid black; /* Sets a 1px solid black border on the right */
+}
+
+.border-bottom-1px-solid-black {
+    border-bottom: 1px solid black; /* Sets a 1px solid black border on the bottom */
+}
+
+.border-left-1px-solid-black {
+    border-left: 1px solid black; /* Sets a 1px solid black border on the left */
+}
+
+/* Background Properties */
+.background-color-red {
+    background-color: red; /* Sets the background color to red */
+}
+
+.background-image-url {
+    background-image: url('image.jpg'); /* Sets the background image */
+}
+
+.background-repeat-no-repeat {
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.background-position-center {
+    background-position: center; /* Centers the background image */
+}
+
+.background-size-cover {
+    background-size: cover; /* Scales the background image to cover the element */
+}
+
+/* Font Properties */
+.font-size-16px {
+    font-size: 16px; /* Sets the font size to 16px */
+}
+
+.font-style-italic {
+    font-style: italic; /* Sets the font style to italic */
+}
+
+.font-variant-small-caps {
+    font-variant: small-caps; /* Sets the font variant to small-caps */
+}
+
+.font-weight-700 {
+    font-weight: 700; /* Sets the font weight to 700 (bold) */
+}
+
+/* Text Properties */
+.text-align-left {
+    text-align: left; /* Aligns the text to the left */
+}
+
+.text-align-right {
+    text-align: right; /* Aligns the text to the right */
+}
+
+.text-align-center {
+    text-align: center; /* Aligns the text to the center */
+}
+
+.text-align-justify {
+    text-align: justify; /* Stretches the lines so that each line has equal width */
+}
+
+.text-decoration-none {
+    text-decoration: none; /* Removes any text decoration */
+}
+
+.text-transform-uppercase {
+    text-transform: uppercase; /* Transforms the text to uppercase */
+}
+
+.text-transform-lowercase {
+    text-transform: lowercase; /* Transforms the text to lowercase */
+}
+
+.text-transform-capitalize {
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+}
+
+/* List Properties */
+.list-style-none {
+    list-style: none; /* Removes the list style */
+}
+
+.list-style-disc {
+    list-style: disc; /* Sets the list style to disc */
+}
+
+.list-style-circle {
+    list-style: circle; /* Sets the list style to circle */
+}
+
+.list-style-square {
+    list-style: square; /* Sets the list style to square */
+}
+
+.list-style-image {
+    list-style-image: url('image.jpg'); /* Sets the list style to an image */
+}
+
+/* Cursor Properties */
+.cursor-pointer {
+    cursor: pointer; /* Sets the cursor to a pointer */
+}
+
+.cursor-default {
+    cursor: default; /* Sets the cursor to the default cursor */
+}
+
+.cursor-move {
+    cursor: move; /* Sets the cursor to a move cursor */
+}
+
+.cursor-text {
+    cursor: text; /* Sets the cursor to a text cursor */
+}
+
+.cursor-wait {
+    cursor: wait; /* Sets the cursor to a wait cursor */
+}
+
+/* Transition Properties */
+.transition-all {
+    transition: all 0.3s ease; /* Sets a transition on all properties */
+}
+
+.transition-width {
+    transition: width 0.3s ease; /* Sets a transition on the width property */
+}
+
+.transition-height {
+    transition: height 0.3s ease; /* Sets a transition on the height property */
+}
+
+.transition-opacity {
+    transition: opacity 0.3s ease; /* Sets a transition on the opacity property */
+}
+
+.transition-transform {
+    transition: transform 0.3s ease; /* Sets a transition on the transform property */
+}
+/*transition shorthand*/
+
+
+/* Transform Properties */
+.transform-rotate-45 {
+    transform: rotate(45deg); /* Rotates the element by 45 degrees */
+}
+
+.transform-scale-2 {
+    transform: scale(2); /* Scales the element by 2 */
+}
+
+.transform-translate-50-50 {
+    transform: translate(50px, 50px); /* Translates the element by 50px on both axes */
+}
+
+.transform-skew-10-10 {
+    transform: skew(10deg, 10deg); /* Skews the element by 10 degrees on both axes */
+}
+
+/* Animation Properties */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.animation-example {
+    animation-name: example; /* Sets the name of the animation */
+    animation-duration: 4s; /* Sets the duration of the animation */
+    animation-timing-function: linear; /* Sets the timing function of the animation */
+    animation-delay: 2s; /* Sets the delay before the animation starts */
+    animation-iteration-count: infinite; /* Sets the number of times the animation should repeat */
+    animation-direction: alternate; /* Sets the direction of the animation */
+
+
+}
+
+div:hover {
+    background-color: lightblue;
+}
+
+.animation-example {
+    animation-name: example; /* Sets the name of the animation */
+    animation-duration: 4s; /* Sets the duration of the animation */
+    animation-timing-function: linear; /* Sets the timing function of the animation */
+    animation-delay: 2s; /* Sets the delay before the animation starts */
+    animation-iteration-count: infinite; /* Sets the number of times the animation should repeat */
+    animation-direction: alternate; /* Sets the direction of the animation */
+}
+
+list{
+    list-style-type: disc; /* Sets the list item marker to a disc */
+    list-style-type: circle; /* Sets the list item marker to a circle */
+    list-style-type: square; /* Sets the list item marker to a square */
+    list-style-type: decimal; /* Sets the list item marker to a number */
+    list-style-type: decimal-leading-zero; /* Sets the list item marker to a number with leading zeros */
+    list-style-type: lower-roman; /* Sets the list item marker to lower-case roman numerals */
+    list-style-type: upper-roman; /* Sets the list item marker to upper-case roman numerals */
+    list-style-type: lower-alpha; /* Sets the list item marker to lower-case letters */
+    list-style-type: upper-alpha; /* Sets the list item marker to upper-case letters */
+    list-style-type: none; /* Removes the list item marker */
+}
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Examples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Basic HTML Tags -->
+    <header>
+        <h1>Basic HTML Tags</h1>
+    </header>
+
+    <section>
+        <h2>Heading Tags</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <h2>Paragraph</h2>
+        <p>This is a sample paragraph.</p>
+
+        <h2>Anchor Tag</h2>
+        <a href="https://example.com">Visit Example</a>
+
+        <h2>Image Tag</h2>
+        <img src="example.jpg" alt="Example Image">
+
+        <h2>Line Break (br)</h2>
+        <p>First Line<br>Second Line</p>
+
+        <h2>Text Formatting</h2>
+        <p><b>Bold Text</b>, <i>Italic Text</i>, <u>Underlined Text</u></p>
+        <p><big>Big Text</big>, <small>Small Text</small></p>
+
+        <h2>Horizontal Rule</h2>
+        <hr>
+
+        <h2>Subscript and Superscript</h2>
+        <p>H<sub>2</sub>O and A<sup>n</sup></p>
+
+        <h2>Preformatted Text</h2>
+        <pre>
+            This is
+            preformatted text.
+        </pre>
+    </section>
+
+    <!-- Page Layout Techniques -->
+    <header>
+        <h1>Page Layout Techniques</h1>
+    </header>
+
+    <section>
+        <h2>Div Tag</h2>
+        <div style="border: 1px solid; padding: 10px;">This is a div container.</div>
+
+        <h2>Span Tag</h2>
+        <p>This is a <span style="color: red;">span element</span> within a paragraph.</p>
+
+        <h2>Inline and Block Elements</h2>
+        <div style="background: lightgrey;">Block Element</div>
+        <span style="color: blue;">Inline Element</span>
+    </section>
+
+    <!-- Lists -->
+    <header>
+        <h1>Lists</h1>
+    </header>
+
+    <section>
+        <h2>Ordered List</h2>
+        <ol>
+            <li>First Item</li>
+            <ul>
+                <li>Subitem </li>
+                <li>Subitem </li>
+            </ul>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+
+        <h2>Unordered List</h2>
+        <ul>
+            <li>First Item</li>
+            <ol>
+                <li>Subitem </li>
+                <li>Subitem </li>
+            </ol>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ul>
+    </section>
+
+    <!-- Table in HTML -->
+    <header>
+        <h1>Tables</h1>
+    </header>
+
+    <section>
+        <h2>Table with Caption</h2>
+        <table border="1">
+            <caption>Sample Table</caption>
+            <tr>
+                <th style="color: blue; background-color: aquamarine;">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <h2>Table with Colspan</h2>
+        <table border="1">
+            <tr>
+                <th colspan="2">Header Spanning Two Columns</th>
+            </tr>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Form in HTML -->
+    <header>
+        <h1>Forms</h1>
+    </header>
+
+    <section>
+        <h2>Form with Labels</h2>
+        <form action="/submit" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Type username" name="username"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <h2>Checkbox</h2>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <input type="radio" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to Newsletter</label><br><br>
+
+            <h2>Textarea</h2>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+            <h2>Select Dropdown</h2>
+            <label for="city">Choose a city:</label>
+            <select id="city" name="city">
+                <option value="newyork">New York</option>
+                <option value="losangeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
