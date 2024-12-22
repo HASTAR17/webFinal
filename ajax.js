@@ -1,7 +1,7 @@
 document.querySelector("#postBtn").addEventListener("click", () => {
     let xhr = new XMLHttpRequest();
 
-    xhr.open("POST", "/prac.json", true);
+    xhr.open("POST", "https://jsonplaceholder.typicode.com/posts", true);
 
     xhr.setRequestHeader("Content-Type", "application/json");
 
@@ -38,7 +38,7 @@ document.querySelector("#postBtn").addEventListener("click", () => {
 document.querySelector("#getBtn").addEventListener("click", () => {
     let xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "https://raw.githubusercontent.com/HASTAR17/Web-Programming-/refs/heads/main/ajax.json", true);
+    xhr.open("GET", "/ajax.json", true);
 
     xhr.onload = () => {
         if (xhr.status === 200) { // Success
