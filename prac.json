@@ -5,6 +5,7 @@
     "foods": {
       "likes": ["tuna", "catnip"],
       "dislikes": ["ham", "zucchini"]
+      
     }
   },
   {
