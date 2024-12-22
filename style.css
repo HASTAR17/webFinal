@@ -2,6 +2,9 @@
 body {
     font-family: Arial, sans-serif;
 }
+.button:hover {
+    background-color: lightblue;
+}
 
 /* Color and Background Color */
 .foreground-pink {
