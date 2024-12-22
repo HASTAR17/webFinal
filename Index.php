@@ -69,6 +69,13 @@
     }
     echo "<hr>";
 
+    $result = mysqli_query($conn, $sql4);
+    echo "Table Data Before Update by Var_dump:<br>";
+    while ($row = mysqli_fetch_assoc($result)) {
+       var_dump($row);
+    }
+    echo "<hr>";
+
     // Update table values
     $updateSql = "UPDATE `PHP` SET `B` = 'Ball', `D` = 10 WHERE `A` = 'Ara'";
     if (mysqli_query($conn, $updateSql)) {
@@ -103,6 +110,8 @@
     } else {
         echo "No records found<br>";
     }
+
+
     ?>
 
 </body>
